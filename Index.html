@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="shortcut icon" href="facivon.ico.ico" type="image/x-icon">
+    <style>
+     div { background-color: rgba(255, 0, 0, 0.319);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        text-align: center;}
+    body{ margin: 0px;}
+
+        
+
+    </style>
+
+    
+</head>
+<body>
+    <div class="Pedido">
+    <h2>Mande audio falando quimiama</h2>
+    <a href="https://www.youtube.com/watch?v=dv9QSwvByEE"><Button onclick="Sim()">Sim</Button></a>
+    <Button  class="nao" onmouseover="desvia(this)">Não</Button>
+
+    </div>
+    
+    <script>
+        function Sim() {
+            alert ("Escolha perfeita")
+        }
+        function desvia(t) {
+        var btn = t;
+        console.log ("Clique no sim");
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraposicao(10,90);
+        btn.style.left = geraposicao(10,90);
+        }
+
+        function geraposicao(min, max) {  
+            return (Math.random() * (max - min) + min) + "%"; 
+        }
+        </script>
+</body>
+</html>
